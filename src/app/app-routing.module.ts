@@ -3,10 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { ForloopComponent } from './forloop/forloop.component';
 import { LoginComponent } from './login/login.component';
+import { PaymentHomeComponent } from './payment-home/payment-home.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'transactions', component: ForloopComponent },
+  { path: 'payment', component: PaymentHomeComponent },
   { path: '**', component: ErrorPageComponent },
 ];
 
