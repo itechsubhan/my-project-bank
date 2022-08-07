@@ -1,0 +1,5 @@
+<p>forloop works!</p>
+<div *ngFor="let item of bankList">
+    <app-transaction-row  [banklist] = "item"></app-transaction-row>
+    <!-- <app-product [currencyCode]="selectedCurrency" [data]="item" (btnClick)="addItem($event)"></app-product> -->
+</div>
